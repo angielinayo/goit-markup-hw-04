@@ -231,10 +231,8 @@ button {
     text-transform: uppercase;
 }
 /*=============================VALUES SECTION=============================*/
-
-
 .values-card {
-    width: 270px;
+    flex-basis: calc((100% - 90px) / 3); 
 }
 
 .values-heading {
@@ -255,7 +253,6 @@ button {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
 /*=============================WORK SECTION============================*/
 .section-work {
     padding-top: 0;
@@ -272,14 +269,17 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.works-card {
+    flex-basis: calc((100% - 60px) / 3);
+}
 /*=============================TEAM SECTION============================*/
 .team-section {
     background-color: var(--backgr-grey-color);
 }
 
 .team-card {
-    width: 270px;
-    height: 368px;
+    flex-basis: calc((100% - 90px) / 3);
     background-color: var(--white-text-color);
 }
 
@@ -322,8 +322,7 @@ button {
 }
 
 .portfolio-card {
-    width: 370px;
-    height: 404px;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .results-title {
