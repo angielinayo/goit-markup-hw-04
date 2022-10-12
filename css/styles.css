@@ -356,6 +356,15 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 }
+/*===========================MAIN CLIENTS=====================================*/
+.client {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
 /*===========================PORTFOLIO=====================================*/
 .filter-list {
     display: flex;
@@ -410,6 +419,12 @@ button {
     padding-bottom: 60px;
 }
 
+.footer-flex {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
 .logo-footer {
     display: block;
     margin-bottom: 20px;
@@ -442,7 +457,7 @@ button {
     color: #FFFFFF99;
     font-size: 14px;
     font-style: normal;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -450,3 +465,46 @@ button {
 .footer-link:focus {
     color: #2196F399;
 }
+
+.footer-p {
+    display: block;
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socials-link {
+    flex-basis: calc((100% - (10px * 3)) / 4);
+    height: 44px;
+  }
+
+.socials-link-a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .socials-link-a:hover,
+  .socials-link-a:focus {
+    background-color: var(--color-accent);
+  }
+
+.socials-icons {
+    fill: var(--white-text-color);
+  }
+
+
+
