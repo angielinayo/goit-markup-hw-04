@@ -266,18 +266,22 @@ button {
 }
 
 .icon-anthenna::before {
+    content: '';
     background-image: url();
 }
 
 .icon-watch::before {
+    content: '';
     background-image: url();
 }
 
 .icon-graphic::before {
+    content: '';
     background-image: url();
 }
 
 .icon-cosmo::before {
+    content: '';
     background-image: url();
 }
 
@@ -356,6 +360,45 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.team-socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-socials-link {
+    padding-left: auto;
+    padding-right: auto;
+    padding-bottom: 30px;
+    padding-top: 16px;
+
+  }
+
+.team-socials-link-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  
+  .team-socials-link-a:hover,
+  .team-socials-link-a:focus {
+    background-color: var(--accent-color);
+  }
+  
+  .team-socials-icons {
+    fill: #AFB1B8;
+  }
+
+  .team-socials-link-a:hover .team-socials-icons, 
+  .team-socials-link-a:focus .team-socials-icons {
+    fill: var(--white-text-color);
+  }
 /*===========================MAIN CLIENTS=====================================*/
 .client {
     width: 170px;
@@ -484,12 +527,10 @@ button {
 }
 
 .socials-link {
-    flex-basis: calc((100% - (10px * 3)) / 4);
+    flex-basis: calc((100% - 30px) / 4);
     width: 44px;
     height: 44px;
   }
-
-
 
 .socials-link-a {
     width: 100%;
@@ -499,8 +540,6 @@ button {
     justify-content: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 12px;
- 
   }
   
   .socials-link-a:hover,
