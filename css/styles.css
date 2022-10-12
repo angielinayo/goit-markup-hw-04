@@ -371,8 +371,7 @@ button {
 .team-socials-link {
     padding-left: auto;
     padding-right: auto;
-    padding-bottom: 30px;
-    padding-top: 16px;
+    margin-bottom: 30px;
 
   }
 
