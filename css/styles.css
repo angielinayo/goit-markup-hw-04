@@ -7,7 +7,7 @@
     --general-text-color: #757575;
     --accent-color: #2196F3; 
 
-    --backgr-dark-color: #2F303A;
+    --backgr-dark-color: #2F303A; 
     --backgr-grey-color: #F5F4FA;
 }
 
@@ -210,8 +210,22 @@ button {
     color: var(--accent-color)
 }
 /*=============================HERO=============================*/
-.section-hero {
+.hero {
+    max-width: 1600px;
+    height: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: var(--backgr-dark-color);
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/herobcg.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.section-hero {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
