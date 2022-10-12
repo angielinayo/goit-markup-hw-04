@@ -261,6 +261,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--backgr-grey-color);
+    border-radius: 4px;
     margin-bottom: 30px;
 }
 
