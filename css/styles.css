@@ -111,6 +111,7 @@ button {
 .btn-hero:active {
     color: var(--white-text-color);
     background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
@@ -249,6 +250,36 @@ button {
 .values-card {
     flex-basis: calc((100% - 90px) / 3); 
 }
+
+.values-card::before {
+    content: '';
+    width: 270px;
+    height: 120px;
+    display: block;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--backgr-grey-color);
+    margin-bottom: 30px;
+}
+
+.icon-anthenna::before {
+    background-image: url();
+}
+
+.icon-watch::before {
+    background-image: url();
+}
+
+.icon-graphic::before {
+    background-image: url();
+}
+
+.icon-cosmo::before {
+    background-image: url();
+}
+
 
 .values-heading {
     color: var(--black-text-color);
