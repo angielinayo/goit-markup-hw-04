@@ -199,6 +199,8 @@ button {
 }
 
 .contact-nav-link {
+    display: flex;
+    align-items: center;
     color: var(--general-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -334,6 +336,7 @@ button {
     background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
 .card-info-team {
@@ -366,22 +369,24 @@ button {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    padding-right: 32px;
+    padding-left: 32px
 }
 
 .team-socials-link {
     padding-left: auto;
     padding-right: auto;
-    margin-bottom: 30px;
-
+    width: calc((100% - 30px) / 4);
   }
 
 .team-socials-link-a {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
     background-color: transparent;
   }
   
@@ -399,14 +404,48 @@ button {
     fill: var(--white-text-color);
   }
 /*===========================MAIN CLIENTS=====================================*/
-.client {
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.clients-wrap {
+    display: flex;
+    gap: 30px;
     width: 170px;
     height: 92px;
+}
+
+.clients-link {
+    flex-basis: calc((100% - 150px) / 6);
+    padding-left: auto;
+    padding-right: auto;
+
+  }
+
+.clients-link-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-}
+    background-color: transparent;
+    color: #AFB1B8;
+  }
 
+  .clients-link-a:hover, 
+  .clients-link-a:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  .client-icon {
+    fill: currentColor;
+  }
 /*===========================PORTFOLIO=====================================*/
 .filter-list {
     display: flex;
