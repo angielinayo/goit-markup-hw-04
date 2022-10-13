@@ -213,6 +213,11 @@ button {
 .contact-nav-link:focus {
     color: var(--accent-color)
 }
+
+.contact-nav-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
 /*=============================HERO=============================*/
 .hero {
     max-width: 1600px;
@@ -250,43 +255,20 @@ button {
 }
 /*=============================VALUES SECTION=============================*/
 .values-card {
-    flex-basis: calc((100% - 90px) / 3); 
+    flex-basis: calc((100% - 90px) / 3);
+    gap: 30px; 
 }
 
-.values-card::before {
-    content: '';
+.icon-values {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
     width: 270px;
     height: 120px;
-    display: block;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--backgr-grey-color);
-    border-radius: 4px;
     margin-bottom: 30px;
+    background-color: #F5F4FA;
 }
-
-.icon-anthenna::before {
-    content: '';
-    background-image: url();
-}
-
-.icon-watch::before {
-    content: '';
-    background-image: url();
-}
-
-.icon-graphic::before {
-    content: '';
-    background-image: url();
-}
-
-.icon-cosmo::before {
-    content: '';
-    background-image: url();
-}
-
 
 .values-heading {
     color: var(--black-text-color);
@@ -411,18 +393,12 @@ button {
     gap: 30px;
 }
 
-.clients-wrap {
-    display: flex;
-    gap: 30px;
-    width: 170px;
-    height: 92px;
-}
-
 .clients-link {
     flex-basis: calc((100% - 150px) / 6);
     padding-left: auto;
     padding-right: auto;
-
+    width: 170px;
+    height: 92px;
   }
 
 .clients-link-a {
