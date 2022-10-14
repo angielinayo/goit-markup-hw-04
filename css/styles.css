@@ -259,15 +259,13 @@ button {
     gap: 30px; 
 }
 
-.icon-values {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
-    width: 270px;
+.icons-background {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4FA;
     height: 120px;
     margin-bottom: 30px;
-    background-color: #F5F4FA;
 }
 
 .values-heading {
@@ -318,12 +316,13 @@ button {
     background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
 }
 
 .card-info-team {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .section-heading {
@@ -351,25 +350,23 @@ button {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding-right: 32px;
-    padding-left: 32px
+    margin-top: 16px;
 }
 
 .team-socials-link {
-    padding-left: auto;
-    padding-right: auto;
     width: calc((100% - 30px) / 4);
+    height: 44px;
   }
 
 .team-socials-link-a {
     display: flex;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     color: #AFB1B8;
     background-color: transparent;
+    width: 100%;
+    height: 100%;
   }
   
   .team-socials-link-a:hover,
